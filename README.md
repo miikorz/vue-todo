@@ -24,6 +24,9 @@ Open `.firebaserc` file and change the value of default project for your just cr
 ## Build Setup
 
 ``` bash
+# install and use the proper node version from .nvmrc file first
+nvm use
+
 # install dependencies
 npm install
 
