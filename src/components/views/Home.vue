@@ -3,7 +3,7 @@
     <h3>My Boards</h3>
     <div class="boards-collection">
       <template v-if="fetchingData">
-        <span>Loading...</span>
+        <loading></loading>
       </template>
       <input
         type="text"
@@ -24,10 +24,11 @@
 <script>
 import { mapState, mapActions } from 'vuex'
 import BoardCard from '@/components/BoardCard'
+import Loading from '@/components/LoadingSpinner'
 
 export default {
   name: 'home-view',
-  components: { BoardCard },
+  components: { BoardCard, Loading },
 
   data () {
     return {

@@ -8,7 +8,7 @@
       @keyup.enter="add()"
     />
     <template v-if="fetchingData">
-      <span>Loading...</span>
+      <loading></loading>
     </template>
     <div class="container">
       <column
@@ -23,11 +23,12 @@
 
 <script>
 import { mapState, mapGetters, mapActions } from 'vuex'
-import Column from '../Column'
+import Column from '@/components/Column'
+import Loading from '@/components/LoadingSpinner'
 
 export default {
   name: 'board',
-  components: { Column },
+  components: { Column, Loading },
 
   props: {
     name: String,
