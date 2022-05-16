@@ -9,7 +9,7 @@
 * Getters to manage partial state in Components
 * Scoped styles with Sass/SCSS
 * User can create multiple boards, lists and tasks (and of course, delete them)
-* Tasks can be marked as completed
+* Tasks can be marked as completed clicking on them and deleted upon double-click
 * Vue-Router to show different boards
 * Persistence with Firebase
 
