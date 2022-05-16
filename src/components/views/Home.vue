@@ -61,6 +61,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  @import 'src/utils/variables';
+  
   h3 {
     text-align: left;
     margin: 1.5rem;
@@ -76,8 +78,8 @@ export default {
 
   input {
     box-sizing: border-box;
-    background-color: #546E7A;
-    border: 2px solid #546E7A;
+    background-color: $board-card-color;
+    border: 2px solid $board-card-color;
     border-radius: 5px;
     font-size: 1.1rem;
     outline: 0;
@@ -91,11 +93,11 @@ export default {
     &:focus,
     &:active {
       background-color: white;
-      color: #546E7A;
+      color: $board-card-color;
     }
 
     &::placeholder {
-      color: #dad7d7b1;
+      color: $input-placeholder-color;
     }
 
     @media screen and (min-width: 600px) {

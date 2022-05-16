@@ -15,9 +15,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  @import 'src/utils/variables';
+
   header {
     box-sizing: border-box;
-    background-color: #607d8b;
+    background-color: $header-background-color;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -26,7 +28,7 @@ export default {
 
     .title {
       align-self: center;
-      color: #eceff1;
+      color: $header-title-color;
       font-size: 1.2rem;
       font-weight: bold;
       margin-right: 1rem;
@@ -34,13 +36,11 @@ export default {
   }
 
   .btn-header {
-    background-color: #455A64;
+    background-color: $button-header-background-color;
     border: none;
     border-radius: 3px;
-    box-shadow: 0 0 0 0.5px rgba(49,49,93,.03),
-      0 2px 5px 0 rgba(49,49,93,.1),
-      0 1px 2px 0 rgba(0,0,0,.08);
-    color: #f5fcff;
+    box-shadow: $box-shadow;
+    color: $button-header-text-color;
     cursor: pointer;
     text-decoration: none;
     padding: 0.5rem;

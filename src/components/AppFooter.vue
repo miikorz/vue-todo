@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <span>VUE-TODO APP by <a href="https://github.com/miikorz">Miguel Burdeos</a></span>
+    <span>VUE-TODO APP by <a href="https://github.com/miikorz" target="_blank">Miguel Burdeos</a></span>
   </footer>
 </template>
 
@@ -11,9 +11,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  @import 'src/utils/variables';
+  
   footer {
     box-sizing: border-box;
-    background-color: #cfd8dc;
+    background-color: $footer-background-color;
     bottom: 0;
     left: 0;
     padding: 1rem;
@@ -22,7 +24,7 @@ export default {
 
     a {
       text-decoration: none;
-      color: #546E7A;
+      color: $footer-link-color;
     }
   }
 </style>

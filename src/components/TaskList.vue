@@ -48,6 +48,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  @import 'src/utils/variables';
+
   ul {
     list-style: none;
     margin: 0;
@@ -55,40 +57,37 @@ export default {
   }
 
   li {
-    background-color: #fafafa;
+    background-color: $task-background-color;
     border-radius: 3px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid $task-border-color;
     margin: 0.25rem 0;
     padding: 1rem;
 
     &.completed {
-      background-color: #cfd8dc;
-      color: #90a4ae;
+      background-color: $task-completed-color;
+      color: $task-text-secondary-color;
     }
   }
 
   input {
     box-sizing: border-box;
-    background-color: #eceff1;
+    background-color: $task-background-color;
     border: none;
     border-radius: 3px;
     font-size: 1rem;
-    margin: 0.5rem;
     outline: 0;
-    padding: 0.75rem 0;
+    margin: 0.25rem 0;
+    padding: 1rem;
     transition: background-color 600ms ease;
     width: 100%;
 
     &:focus,
     &:active {
-      background-color: #fafafa;
-      border-bottom: 1px solid #ccc;
-      margin: 0.25rem 0;
-      padding: 1rem;
+      box-shadow: $box-shadow;
     }
 
     &::placeholder {
-      color: #90a4ae;
+      color: $task-text-secondary-color;
     }
   }
 </style>

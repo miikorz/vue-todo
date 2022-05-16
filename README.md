@@ -8,7 +8,8 @@
 * Handle state with actions and mutations (Vuex)
 * Getters to manage partial state in Components
 * Scoped styles with Sass/SCSS
-* User can create multiple boards, lists and tasks
+* User can create multiple boards, lists and tasks (and of course, delete them)
+* Tasks can be marked as completed
 * Vue-Router to show different boards
 * Persistence with Firebase
 

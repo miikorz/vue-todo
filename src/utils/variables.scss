@@ -1,0 +1,31 @@
+@import 'src/utils/colors';
+
+$app-text-color: $blue-greyed-darker;
+
+$header-title-color: $white;
+$header-background-color: $blue-greyed;
+
+$footer-background-color: $white-dark;
+$footer-link-color: $blue-greyed-secondary;
+
+$button-header-text-color: $white-secondary;
+$button-remove-primary-color: $red;
+$button-remove-secondary-color: $red-dark;
+$button-header-background-color: $blue-greyed-dark;
+
+$task-background-color: $white;
+$task-completed-color: $grey;
+$task-border-color: $grey;
+$task-text-secondary-color: $blue-greyed-light;
+
+$input-placeholder-color: $grey-dark;
+$input-color: $blue-greyed;
+
+$board-card-hover-color: $blue-greyed-light;
+$board-card-color: $blue-greyed-secondary;
+
+$column-background-color: $white-dark;
+
+$box-shadow: 0 0 0 0.5px rgba(49,49,93,.03),
+0 2px 5px 0 rgba(49,49,93,.1),
+0 1px 2px 0 rgba(0,0,0,.08);

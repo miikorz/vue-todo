@@ -25,11 +25,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  @import 'src/utils/variables';
+
   .board-card {
-    background-color: #546E7A;
-    box-shadow: 0 0 0 0.5px rgba(49,49,93,.03),
-      0 2px 5px 0 rgba(49,49,93,.1),
-      0 1px 2px 0 rgba(0,0,0,.08);
+    background-color: $board-card-color;
+    box-shadow: $box-shadow;
     box-sizing: border-box;
     border-radius: 5px;
     color: #fafafa;
@@ -47,19 +47,19 @@ export default {
     }
 
     &:hover {
-      background-color: #90a4ae;
+      background-color: $board-card-hover-color;
       font-weight: bold;
     }
 
     &-button {
       display: flex;
       align-items: center;
-      border: 1px solid #ff5353;
+      border: 1px solid $button-remove-primary-color;
       padding: 0 14px 1px 14px;
       border-radius: 1px;
       cursor: pointer;
       font-size: 16px;
-      color: #ff5353;
+      color: $button-remove-primary-color;
       width: 45px;
       justify-content: center;
       position: absolute;
@@ -67,8 +67,8 @@ export default {
       right: 0px;
 
       &:active {
-        border: 1px solid #760406;
-        color: #760406;
+        border: 1px solid $button-remove-secondary-color;
+        color: $button-remove-secondary-color;
       }
     }
 

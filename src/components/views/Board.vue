@@ -71,13 +71,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  @import 'src/utils/variables';
+
   h3 {
-    color: #37474f;
+    color: $app-text-color;
     text-align: left;
     margin: 1.5rem;
 
     span {
-      color: #546e7a;
+      color: $board-card-color;
     }
   }
 
@@ -95,13 +97,11 @@ export default {
   }
 
   input {
-    background-color: #607d8b;
+    background-color: $input-color;
     border: 0;
     border-radius: 3px;
-    box-shadow: 0 0 0 0.5px rgba(49,49,93,.03),
-      0 2px 5px 0 rgba(49,49,93,.1),
-      0 1px 2px 0 rgba(0,0,0,.08);
-    color: #607d8b;
+    box-shadow: $box-shadow;
+    color: $input-color;
     font-size: 1.2rem;
     margin: 0 1rem;
     outline: 0;
@@ -114,7 +114,7 @@ export default {
     }
 
     &::placeholder {
-      color: #dad7d7b1;
+      color: $input-placeholder-color;
     }
 
     @media screen and (min-width: 600px) {

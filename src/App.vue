@@ -36,18 +36,18 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#app {
-  box-sizing: border-box;
-  color: #37474f;
-  font-family: "Lato", Helvetica, Arial, sans-serif;
-  margin: 0 auto;
-  padding: 0;
-  text-align: center;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-}
+  @import 'src/utils/variables';
 
-.container {
-  padding-bottom: 4rem;
-}
+  #app {
+    box-sizing: border-box;
+    color: $app-text-color;
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+  }
+
+  .container {
+    padding-bottom: 4rem;
+  }
 </style>
